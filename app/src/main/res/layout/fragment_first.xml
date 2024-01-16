@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--data binding gibi işlemler için layout tagi içine alınır. Navigation için gerekli değil.
+     xmlns ler framelayout içinde loayout un içine yukarıya taşınır.
+
+     **xmlns:android="http://schemas.android.com/apk/res/android": Bu ifade, android ad alanının (xmlns:android)
+     Android sistemine özgü olduğunu belirtir. Bu ad alanı, Android öğeleri ve nitelikleri için kullanılır.
+     Örneğin, android:layout_width ve android:layout_height gibi özellikler bu ad alanına aittir.
+
+     **xmlns:tools="http://schemas.android.com/tools": Bu ifade, tools ad alanının (xmlns:tools)
+      Android Studio tarafından kullanılan ek araçlar ve özelliklerle ilgili olduğunu belirtir.-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/first_fragment_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Fragment"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/first_fragment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO SECOND FRAGMENT"
+        android:layout_gravity="center">
+
+    </Button>
+
+
+</LinearLayout>
+</layout>
